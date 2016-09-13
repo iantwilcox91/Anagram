@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Anagram Result</title>
+  </head>
+  <body>
+    <h1>RESULTS!</h1>
+    <h1>your word @Model.GetUserWord()</h1>
+    <h1>and @Model.GetCompareWord()</h1>
+      @if(Model.CompareAnagram())
+      {
+        <h1>is an example of an Anagram.</h1>
+      }
+      else
+      {
+        <h1>is Not an Anagram!</h1>
+      }
+    <br><a href="/">try again</a>
+  </body>
+</html>
